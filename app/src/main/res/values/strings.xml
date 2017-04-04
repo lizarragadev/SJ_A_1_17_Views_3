@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SJ_A_1_17_Views3</string>
+
+    <string name="titulo">Welcome!</string>
+    <string name="subtitulo">We hope you enjoy \n the stay!</string>
+    <string name="signin">Sign In</string>
+    <string name="fullname">Full Name</string>
+    <string name="email">Email</string>
+    <string name="number">Mobile Number</string>
+    <string name="login">Login</string>
+    <string name="desc">By signing up you confirm that you have read &amp; agree to the our</string>
+    <string name="privacy"><u>Privacy Policy</u></string>
+    <string name="and"> \r and \r </string>
+    <string name="conditions"><u>Terms &amp; Conditions</u></string>
+
+</resources>
