@@ -12,18 +12,17 @@
         android:background="@color/colorPrimary"
         android:alpha="0.7">
     </LinearLayout>
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:gravity="center_vertical"
                 android:layout_gravity="center_vertical">
                 <TextView
                     android:layout_width="match_parent"
@@ -32,8 +31,7 @@
                     android:textSize="@dimen/titulo"
                     android:textColor="@color/colorAccent"
                     android:gravity="center_horizontal"
-                    android:textStyle="bold"
-                    android:layout_marginTop="40dp"/>
+                    android:textStyle="bold"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -92,57 +90,55 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login"
-                    android:paddingLeft="@dimen/barraAncho"
-                    android:paddingRight="@dimen/barraAncho"
-                    android:paddingBottom="@dimen/margenBottom"
-                    android:paddingTop="@dimen/margenBottom"
-                    android:layout_marginTop="@dimen/margen"
-                    android:layout_marginBottom="@dimen/margen"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/boton"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="25sp"
                     android:textColor="@color/colorAccent"
-                    android:textSize="@dimen/signin"/>
+                    android:layout_marginTop="20dp"/>
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-    <TextView
-        android:id="@+id/tvDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/desc"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/terminos"
-        android:layout_above="@+id/ll"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margen"/>
+        </ScrollView>
+    </LinearLayout>
     <LinearLayout
-        android:id="@+id/ll"
+        android:id="@+id/llDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/margenBottom">
+        android:layout_marginBottom="10dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/privacy"
             android:textColor="@color/colorAccent"
-            android:textSize="@dimen/terminos"
+            android:textSize="11sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/and"
             android:textColor="@color/colorAccent"
-            android:textSize="@dimen/terminos"
+            android:textSize="11sp"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/conditions"
             android:textColor="@color/colorAccent"
-            android:textSize="@dimen/terminos"
+            android:textSize="11sp"
             android:textStyle="bold"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desc"
+        android:textColor="@color/colorAccent"
+        android:textSize="11sp"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/llDesc"
+        android:layout_marginBottom="3dp"/>
 </RelativeLayout>
